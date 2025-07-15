@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <h1>HTML Tables</h1>
+    <!-- Tags for Tables: table, tr, th, td -->
+    <table>
+        <!-- caption: used to define captions -->
+        <caption>
+            Table Title
+        </caption>
+        <!-- colgroup: used to define styling for a group of columns-->
+        <colgroup>
+            <!-- col: used to define styling for a single coloumn -->
+        <col style="background-color: yellow;">
+        <col style="background-color: aqua;">
+         <col style="background-color:beige;">
+        </colgroup>
+
+        <thead>
+        <tr>
+            <th>Heading A</th>
+            <th>Heading B</th>
+            <th>Heading C</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <!-- rowspan: defines the number of rows a cell should span -->
+            <td rowspan="2">Data Cell 1</td>
+            <td>Data Cell 2</td>
+            <td>Data Cell 3</td>
+        </tr>
+        <tr>
+            <!-- <td>Data Cell 1</td> -->
+            <td>Data Cell 2</td>
+            <td>Data Cell 3</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan: attribute used to define number of columns a cell should span-->
+                <td colspan="3" style="background-color: bisque;">Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
